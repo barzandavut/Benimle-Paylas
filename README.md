@@ -30,7 +30,7 @@ Projeyi kendi bilgisayarında çalıştırmak için:
 
 1. Bu repoyu klonlayın:
    ```bash
-   [git clone https://github.com/kullanici-adi/proje-adi.git](https://github.com/barzandavut/Benimle-Paylas)
+   [git clone [https://github.com/barzandavut/Benimle-Paylas]
    ```
 
 2. Tarayıcıda açmak için:
