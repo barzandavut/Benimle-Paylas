@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <!-- bootstrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- title -->
+    <title>Benimle Paylaş</title>
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato&amp;family=Varela+Round&amp;display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+</head>
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="70" tabindex="0">
+    <!-- navbar -->
+    <nav id="mainNav" class="navbar bg-white navbar-expand-lg fixed-top shadow-sm ">
+        <div class="container px-5">
+            <div class="container-logo">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <img class="img-fluid" src="img/logo.png" alt="">
+                    <span class="lead text-petroleum">Benimle Paylas</span>
+                </a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="bi-list"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto my-auto my-3 me-4 mb-lg-0">
+                    <li class="nav-item m-2">
+                        <a class="nav-link text-petroleum mg-lg-2" aria-current="page" href="index.html">Anasayfa</a>
+                    </li>
+                    <li class="nav-item m-2">
+                        <a class="nav-link text-petroleum mg-lg-2" aria-current="page" href="services.html">Hizmetler</a>
+                    </li>
+                    <li class="nav-item m-2">
+                        <a class="nav-link text-petroleum mg-lg-2" aria-current="page" href="about.html">Hakkımızda</a>
+                    </li>
+                    <li class="nav-item m-2">
+                        <a class="nav-link text-petroleum mg-lg-2" href="#" data-bs-toggle="modal" data-bs-target="#psikologModal">
+                            <i class="fa-regular fa-user me-2"></i>Psikolog Girişi
+                        </a>
+                    </li>
+                    <li class="nav-item m-2">
+                        <a class="nav-link text-petroleum mg-lg-2" href="#" data-bs-toggle="modal" data-bs-target="#danisanModal">
+                            <i class="fa-solid fa-user me-2"></i>Danışan Girişi
+                        </a>
+                    </li>
+                    <li class="nav-item my-auto">
+                        <button class="bg-petroleum text-light-natural randevu-button rounded-pill mg-lg-2 my-auto" 
+                        data-bs-toggle="modal" data-bs-target="#loginModal" onclick="document.getElementById('id01').style.display='block'" style="width:auto;" aria-current="page">
+                        Üye Ol</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- support-icon -->
+    <button class="bg-gradient-primary-to-secondary rounded-pill fixed-support-btn" type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <span class="d-flex align-items-center">
+            <i class="fa-solid fa-headset text-light-natural mx-2"></i>
+            <span class="small text-light-natural login-user mx-2">Hızlı Destek Al</span>
+        </span>
+    </button>
+
+    <!-- SSS -->
+    <main id="site-main" class="text-petroleum py-5">
+        <div class="container py-5 px-5">
+            <div class="hlp-title">
+                <h1 class="display-1 pt-3">Sıkça Sorulan Sorular</h1>
+            </div>
+            <div class="hlp-content mt-5">
+                <div class="accordion" id="psychologyFaq">
+                    <div class="acc-item active">
+                                <div class="acc-header">
+                                    <h4>Psikoloğa gitmek için illa bir sorunumun olması mı gerekir?</h4>
+                                </div>
+                                <div class="acc-body">
+                                    <p class="lead opacity-75">Hayır, psikoloğa gitmek için ciddi bir sorun yaşamanız gerekmez. Kişisel gelişim, stres yönetimi, ilişkiler veya kendinizi daha iyi tanımak için de psikolojik destek alabilirsiniz.</p>
+                                </div>
+                    </div>
+                    <div class="acc-item">
+                                <div class="acc-header">
+                                    <h4>Psikolojik danışmanlıkta gizlilik sağlanıyor mu?</h4>
+                                </div>
+                                <div class="acc-body">
+                                    <p class="lead opacity-75">Evet, psikolojik danışmanlıkta gizlilik esastır. Görüşmeleriniz ve paylaştığınız bilgiler etik kurallar gereği üçüncü kişilerle paylaşılmaz.</p>
+                                </div>
+                    </div>
+                    <div class="acc-item">
+                                <div class="acc-header">
+                                    <h4>İşaret diliyle psikolojik destek var mı?</h4>
+                                </div>
+                                <div class="acc-body">
+                                    <p class="lead opacity-75">Evet. Ekibimizde yer alan birçok Psikolog profesyonel derecede Türk İşaret Dili'ni bilmektedir.</p>
+                                </div>
+                    </div>
+                    <div class="acc-item">
+                                <div class="acc-header">
+                                    <h4>Online terapi yüz yüze terapi kadar etkili midir?</h4>
+                                </div>
+                                <div class="acc-body">
+                                    <p class="lead opacity-75">Birçok araştırma, online terapinin de yüz yüze terapi kadar etkili olabileceğini göstermektedir. Kişinin ihtiyaçlarına ve terapiye olan bağlılığına göre her iki yöntem de faydalı olabilir.</p>
+                                </div>
+                    </div>
+                    <div class="acc-item">
+                                <div class="acc-header">
+                                    <h4>Psikoloğa gitmek zayıflık mıdır?</h4>
+                                </div>
+                                <div class="acc-body">
+                                    <p class="lead opacity-75">Kesinlikle hayır. Psikoloğa gitmek, kişinin kendine ve ruh sağlığına değer verdiğini gösterir. Bu bir güç ve farkındalık göstergesidir.</p>
+                                </div>
+                    </div>
+                    <div class="acc-item">
+                                <div class="acc-header">
+                                    <h4>Psikolojik destek almak için randevu nasıl alabilirim?</h4>
+                                </div>
+                                <div class="acc-body">
+                                    <p class="lead opacity-75">Web sitemiz üzerinden veya mobil uygulamamızdan kolayca randevu alabilirsiniz. Ayrıca hızlı destek butonunu kullanarak da ön görüşme talebinde bulunabilirsiniz.</p>
+                                </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+     <!-- footer -->
+    <main class="bg-dark py-4 pt-5">
+        <div class="container mx-auto my-auto footer-container">
+            <div class="row d-flex">
+                <div class="col-6 col-lg-3 d-flex flex-column justify-content-center mb-4">
+                    <div class="container w-100">
+                        <h3 class="text-light-natural">Bize Katıl</h3>
+                        <input class="form-control mb-2 w-75" type="mail" placeholder="@benimlepaylas.com">
+                        <input class="btn btn-light-natural text-patroleum w-75" type="submit" value="Abone Ol">
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 d-flex flex-column justify-content-center mb-4">
+                    <ul class="list-unstyled">
+                            <li><a class="text-light-natural text-decoration-none" href="#">Yardım &amp; Destek</a></li>
+                            <li><a class="text-light-natural text-decoration-none" href="sss.html">SSS</a></li>
+                            <li><a class="text-light-natural text-decoration-none" href="#">Gizlilik</a></li>
+                            <li><a class="text-light-natural text-decoration-none" href="#">Hakkımızda</a></li>
+                        </ul>
+                </div>
+                <div class="col-6 col-lg-3 d-flex flex-column justify-content-center mb-4">
+                    <div class="container">
+                        <h3 class="text-light-natural">İletişim</h3>
+                        <p class="text-light-natural">Kardeşler Mahallesi, <br>
+                            Temmuz Caddesi, <br>
+                            No: 2 1993 Sivas
+                        </p>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 link-icon d-flex flex-column justify-content-start mb-4">
+                    <div class="container">
+                        <h3 class="text-light-natural">Bizi Takip Et</h3>
+                        <div class="d-flex gap-4 links"> 
+                            <a href="#"><i class="fa-brands fa-youtube text-danger"></i></a>
+                            <a href="#"><i class="fa-brands fa-x text-light-natural"></i></a>
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram text-danger"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- main footer -->
+    <footer class="bg-dark py-5 text-center">
+        <div class="container px-5">
+            <div class="small">
+                <div class="text-light-natural opacity-50 mb-2">Copyright © Benimle Paylaş 2025. All Rights Reserved.</div>
+                <a class="text-light-natural text-decoration-none opacity-50" href="#">Privacy</a>
+                <span class="mx-1">.</span>
+                <a class="text-light-natural text-decoration-none opacity-50" href="#">Terms</a>
+                <span class="mx-1">.</span>
+                <a class="text-light-natural text-decoration-none opacity-50" href="#">FAQ</a>
+            </div>
+        </div>
+    </footer>
+
+    <!--Fast Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header bg-petroleum">
+                <h1 class="text-light-natural fs-5" id="exampleModalLabel">Hızlı Destek Al</h1>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="floatingInput" placeholder="Full name">
+                        <label for="floatingInput">Ad</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="floatingInput" placeholder="Full name">
+                        <label for="floatingInput">Soyad</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">Email</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                        <label for="floatingTextarea2">Mesaj</label>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <button type="button" class="bg-modal text-light-natural d-block rounded-pill">Gönder</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Login modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header bg-petroleum">
+            <h5 class="text-light-natural" id="loginModalLabel">Üye Ol</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Kapat"></button>
+          </div>
+          <div class="modal-body bg-light">
+            <form class="login-content text-petroleum py-4" action="/action_page.php">
+                <div class="container">
+                    <p>Hesap oluşturmak için lütfen bu formu doldurun.</p>
+                    <hr>
+                    <label for="firstName">Ad</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="İsminiz">
+
+                    <label for="lastName">Soyad</label>
+                    <input type="text" class="form-control" id="lastName" placeholder="Soyadınız">
+
+                    <label for="psw">Şifre</label>
+                    <input type="password" class="form-control" id="password" placeholder="Şifrenizi Girin" name="psw" required>
+
+                    <label for="psw-repeat">Şifreyi Tekrarla</label>
+                    <input type="password" class="form-control" placeholder="Şifrenizi Tekrar Girin" id="repeatPassword" name="psw-repeat" required>
+                    
+                    <label for="password">Mail Adresiniz</label>
+                    <input type="password" class="form-control" placeholder="E-posta Adresinizi Girin" id="password" name="psw" required>
+                    
+                    <label class="mt-2" >
+                    <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px">Beni hatırla
+                    </label>
+
+                    <p>Hesap oluşturarak, 
+                        <a href="#" style="color:dodgerblue">Şartlar ve Gizlilik Politikamızı</a> kabul etmiş olursunuz.
+                    </p>
+
+                    <div class="clearfix">
+                        <button type="submit" class="btn btn-primary">Giriş</button>
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Vazgeç</button>
+                    </div>
+                </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Danışan Modal -->
+    <div class="modal fade" id="danisanModal" tabindex="-1" aria-labelledby="danisanModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header bg-petroleum text-light-natural">
+            <h5 class="modal-title text-light-natural" id="danisanModalLabel">Danışan Girişi</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Kapat"></button>
+        </div>
+        <div class="modal-body">
+            <form>
+            <div class="mb-3">
+                <label for="clientName" class="form-label text-petroleum">E-posta</label>
+                <input type="email" class="form-control" id="clientName" placeholder="danısan@benimlepaylas.com">
+            </div>
+            <div class="mb-3">
+                <label for="danisanPassword" class="form-label text-petroleum">Şifre</label>
+                <input type="password" class="form-control" id="danisanPassword" placeholder="Şifreniz">
+            </div>
+            <button type="submit" class="btn btn-petroleum text-light-natural w-100">Giriş Yap</button>
+            </form>
+            <div class="text-center mt-3">
+            <a class="text-petroleum" href="#">Şifremi unuttum</a>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Psikolog Modal -->
+    <div class="modal fade" id="psikologModal" tabindex="-1" aria-labelledby="psikologModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header bg-petroleum text-light-natural">
+            <h5 class="modal-title" id="psikologModalLabel">Psikolog Girişi</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Kapat"></button>
+        </div>
+        <div class="modal-body">
+            <form>
+            <div class="mb-3">
+                <label for="psikologEmail" class="form-label text-petroleum">E-posta</label>
+                <input type="email" class="form-control" id="psikologEmail" placeholder="psikolog@benimlepaylas.com">
+            </div>
+            <div class="mb-3">
+                <label for="psikologPassword" class="form-label text-petroleum">Şifre</label>
+                <input type="password" class="form-control" id="psikologPassword" placeholder="Şifreniz">
+            </div>
+            <button type="submit" class="btn btn-petroleum text-light-natural w-100">Giriş Yap</button>
+            </form>
+            <div class="text-center mt-3">
+            <a class="text-petroleum" href="#">Şifremi unuttum</a>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+     
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+<script src="main.js" ></script>
+
+</body>
+</html>

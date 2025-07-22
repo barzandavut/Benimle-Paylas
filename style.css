@@ -1,0 +1,460 @@
+/* =====================
+    Root
+   ===================== */
+
+   :root{
+    --bg-petroleum: #00435a;
+    --bg-light-natural: #f4f4f4;
+    --btn-petroleum: #00435a;
+    --btn-light-natural: #f4f4f4;
+    --btn-text-petroleum: #00435a;
+    --btn-text-light-natural: #f4f4f4;
+    --text-petroleum: #00435a;
+    --text-light-natural:#f4f4f4;
+   }
+/* =====================
+   GENEL RESET VE TEMEL STİLLER
+   ===================== */
+* {
+    box-sizing: border-box;
+}
+body {
+    position: relative;
+}
+.fw-bold {
+    font-weight: 700 !important;
+}
+
+/* =====================
+   NAVBAR
+   ===================== */
+.bg-light-natural {
+    background-color: var(--bg-light-natural);
+}
+.navbar-brand img {
+    height: 56px;
+    max-height: 64px;
+    width: auto;
+}
+.text-petroleum {
+    color: var(--text-petroleum) !important;
+}
+.text-light-natural {
+    color: var(--text-light-natural) !important;
+}
+.bg-petroleum{
+    background-color: var(--bg-petroleum);
+}
+.randevu-button:hover{
+    background-color: var(--bg-light-natural) !important;
+    color: var(--text-petroleum) !important;
+}
+
+
+
+/* =====================
+   BUTTONS
+   ===================== */
+
+.btn-light-natural{
+    background-color: var(--btn-light-natural) !important;
+}
+.btn-petroleum {
+    background-color: var(--btn-petroleum) !important;
+}
+.btn-text-petroleum{
+    color: var(--btn-text-petroleum) !important;
+}
+.btn-text-light-natural {
+    color: var(--btn-text-light-natural) !important;
+}
+
+
+#support:hover{
+    background-color: var(--bg-petroleum) !important;
+    color: var(--text-light-natural) !important;
+}
+
+/* =====================
+   GÖRSELLER
+   ===================== */
+.img-fluid {
+    width: 100%;
+}
+.rounded-circle {
+    border-radius: 50% !important;
+}
+
+/* =====================
+   ANA BAŞLIK/Masthead
+   ===================== */
+.masthead {
+    padding-top: 100px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+/* =====================
+   CIRCLE VE TERAPİ GÖRSELİ
+   ===================== */
+.circle {
+    background: linear-gradient(135deg, #00435a 0%, #00435a 100%);
+    width: 375px;
+    height: 375px;
+    border-radius: 50%;
+    margin: 5em auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.circle::before {
+    content: ".";
+    font-size: 100px;
+    color: #00435a;
+    position: absolute;
+    top: -100px;
+    right: -40px;
+    transform: rotate(45deg);
+}
+.circle::after {
+    content: "x";
+    font-weight: bold;
+    font-size: 28px;
+    color: #00435a;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    transform: rotate(45deg);
+}
+.img-terapi {
+    max-width: 70%;
+    max-height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.terapi-img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* =====================
+   GRADIENT BACKGROUND
+   ===================== */
+.bg-gradient-primary-to-secondary {
+    background: linear-gradient(135deg, #cdcfd0 0%, #00435a 100%);
+}
+
+/* =====================
+   psy-sign-img
+   ===================== */
+.img-world {
+    border-radius: 50% !important;
+    width: 90%;
+}
+
+/* =====================
+   CTA
+   ===================== */
+.cta-content {
+    padding: 10rem;
+}
+
+/* =====================
+   RESPONSIVE
+   ===================== */
+@media (max-width: 991.98px) {
+    .column-flex {
+        justify-content: center;
+    }
+    .app-badge {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* =====================
+   İKONLAR
+   ===================== */
+.icon-feature {
+    font-size: 3rem;
+}
+.about .foto-icon-sign {
+    bottom: 10px !important;
+    left: 20px !important;
+    position: absolute !important;
+
+}
+
+
+/* =====================
+   APP BADGE LİNKLERİ
+   ===================== */
+.app-badge-1,
+.app-badge-2,
+.masthead a[href*="apple.com"],
+.masthead a[href*="play.google.com"],
+aside a[href*="apple.com"],
+aside a[href*="play.google.com"],
+#download a {
+    cursor: pointer !important;
+    transition: transform 0.3s ease;
+    text-decoration: none;
+}
+.app-badge-1:hover,
+.app-badge-2:hover,
+.masthead a[href*="apple.com"]:hover,
+.masthead a[href*="play.google.com"]:hover,
+aside a[href*="apple.com"]:hover,
+aside a[href*="play.google.com"]:hover,
+#download a:hover {
+    transform: scale(1.05);
+}
+.app-badge-1 img,
+.app-badge-2 img,
+.masthead a[href*="apple.com"] img,
+.masthead a[href*="play.google.com"] img,
+aside a[href*="apple.com"] img,
+aside a[href*="play.google.com"] img,
+#download img {
+    max-width: 200px;
+    height: auto;
+}
+
+/* =====================
+   ABOUT BÖLÜMÜ
+   ===================== */
+.about {
+    position: relative;
+    margin: 0;
+    padding-top: 100px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+@media (max-width: 991.98px) {
+    .about .row {
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+    .about .col-3 {
+        width: 90% !important;
+        max-width: 350px;
+        margin-bottom: 2rem;
+    }
+    .about .about-img img {
+        width: 120px !important;
+        height: 120px !important;
+    }
+}
+
+/* =====================
+   FOOTER VE LİNKLER
+   ===================== */
+
+.links a {
+    transition: color 0.3s, transform 0.3s;
+}
+.links a:hover i {
+    transform: scale(1.2) rotate(-10deg);
+}
+
+/* =====================
+   TESTIMONIAL CAROUSEL
+   ===================== */
+#testimonialCarousel {
+    min-height: 300px;
+    padding: 3rem 0;
+}
+#testimonialCarousel .carousel-item {
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#testimonialCarousel .carousel-item:not(.active) {
+    display: none !important;
+}
+#testimonialCarousel .carousel-item.active {
+    display: flex !important;
+}
+.testimonial-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+.testimonial-content h3 {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+}
+.testimonial-content p {
+    font-size: 1rem;
+    font-style: italic;
+    opacity: 0.8;
+}
+#testimonialCarousel .carousel-indicators {
+    bottom: 10px;
+}
+#testimonialCarousel .carousel-indicators button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+}
+#testimonialCarousel .carousel-indicators button.active {
+    background-color: #fff;
+    border-color: #fff;
+}
+#testimonialCarousel .carousel-control-prev,
+#testimonialCarousel .carousel-control-next {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 20px;
+    border: none;
+}
+#testimonialCarousel .carousel-control-prev {
+    left: 10px;
+}
+#testimonialCarousel .carousel-control-next {
+    right: 10px;
+}
+#testimonialCarousel .carousel-control-prev-icon,
+#testimonialCarousel .carousel-control-next-icon {
+    width: 20px;
+    height: 20px;
+}
+#testimonialCarousel .carousel-control-prev:hover,
+#testimonialCarousel .carousel-control-next:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+/* shadow */
+.card{
+    box-shadow: 1px 1px rgba(0, 67, 90, 0.2);
+
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.login {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* fixed-fast support */
+.fixed-support-btn {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  z-index: 1050;
+  
+  padding: 12px 28px;
+  font-size: 1rem;
+  transition: box-shadow 0.2s;
+}
+
+@media (max-width: 576px) {
+  .fixed-support-btn {
+    right: 12px;
+    bottom: 12px;
+    padding: 10px 18px;
+    font-size: 0.95rem;
+  }
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+
+.fixed-support-btn {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  z-index: 1050;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+  padding: 12px 28px;
+  font-size: 1rem;
+  transition: box-shadow 0.2s;
+}
+.fixed-support-btn:hover, .fixed-support-btn:focus {
+  box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+}
+@media (max-width: 576px) {
+  .fixed-support-btn {
+    right: 12px;
+    bottom: 12px;
+    padding: 10px 18px;
+    font-size: 0.95rem;
+  }
+}

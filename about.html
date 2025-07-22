@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <!-- bootstrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- title -->
+    <title>Benimle Paylaş</title>
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato&amp;family=Varela+Round&amp;display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+</head>
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="70" tabindex="0">
+    <!-- navbar -->
+    <nav id="mainNav" class="navbar bg-white navbar-expand-lg fixed-top shadow-sm ">
+        <div class="container px-5">
+            <div class="container-logo">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <img class="img-fluid" src="img/logo.png" alt="">
+                    <span class="lead text-petroleum">Benimle Paylas</span>
+                </a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="bi-list"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto my-auto my-3 me-4 mb-lg-0">
+                    <li class="nav-item m-2">
+                        <a class="nav-link text-petroleum mg-lg-2" aria-current="page" href="index.html">Anasayfa</a>
+                    </li>
+                    <li class="nav-item m-2">
+                        <a class="nav-link text-petroleum mg-lg-2" aria-current="page" href="services.html">Hizmetler</a>
+                    </li>
+                    <li class="nav-item m-2">
+                        <a class="nav-link text-petroleum mg-lg-2" aria-current="page" href="about.html">Hakkımızda</a>
+                    </li>
+                    <li class="nav-item m-2">
+                        <a class="nav-link text-petroleum mg-lg-2" href="#" data-bs-toggle="modal" data-bs-target="#psikologModal">
+                            <i class="fa-regular fa-user me-2"></i>Psikolog Girişi
+                        </a>
+                    </li>
+                    <li class="nav-item m-2">
+                        <a class="nav-link text-petroleum mg-lg-2" href="#" data-bs-toggle="modal" data-bs-target="#danisanModal">
+                            <i class="fa-solid fa-user me-2"></i>Danışan Girişi
+                        </a>
+                    </li>
+                    <li class="nav-item my-auto">
+                        <button class="bg-petroleum text-light-natural randevu-button rounded-pill mg-lg-2 my-auto" 
+                        data-bs-toggle="modal" data-bs-target="#loginModal" onclick="document.getElementById('id01').style.display='block'" style="width:auto;" aria-current="page">
+                        Üye Ol</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- support-icon -->
+    <button class="bg-gradient-primary-to-secondary rounded-pill fixed-support-btn" type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <span class="d-flex align-items-center">
+            <i class="fa-solid fa-headset text-light-natural mx-2"></i>
+            <span class="small text-light-natural login-user mx-2">Hızlı Destek Al</span>
+        </span>
+    </button>
+     
+    <!-- about -->
+     <div class="about bg-light-natural" id="about">
+        <div class="container my-auto mx-auto">
+            <h1 class="display-1 text-petroleum text-center mb-5">Ekibimiz</h1>
+            <div class="row justify-content-center align-items-center mt-5">
+                <div class="col-12 col-md-6 col-lg-4 d-flex flex-column align-items-center mb-5">
+                    <div class="card shadow-sm border-0 bg-petroleum text-light-natural py-5 w-100 h-100">
+                        <div class="about-img d-flex justify-content-center position-relative mb-3">
+                            <img class="img-fluid rounded-circle cv-img" style="width: 150px; height: 150px; object-fit: cover;" src="img/CV Fotoğraf.jpg" alt=""><i class="fa-solid fa-hands fs-5 text-petroleum opacity-75 icon-feature img-icon-sign text-gradient"></i>
+                        </div>
+                        <div class="text-center">
+                            <a class="text-decoration-none" href="about-personel-1.html"><h2 class="display-5 mb-4 text-petroleum">Davut Çiftçi</h2></a>
+                            <p class="lead fw-normal text-petroleum opacity-50">Psikolog</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 d-flex flex-column align-items-center mb-5">
+                    <div class="card shadow-sm border-0 bg-petroleum text-light-natural py-5 w-100 h-100">
+                        <div class="about-img d-flex justify-content-center position-relative mb-3">
+                            <img class="img-fluid rounded-circle cv-img" style="width: 150px; height: 150px; object-fit: cover;" src="img/freud.png" alt="">
+                        </div>
+                        <div class="text-center">
+                            <a class="text-decoration-none" href="about-personel-2.html"><h2 class="display-5 mb-4 text-petroleum">Sigmund Freud</h2></a>
+                            <p class="lead fw-normal text-petroleum opacity-50 mb-5">Nörolog</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 d-flex flex-column align-items-center mb-5">
+                    <div class="card shadow-sm border-0 bg-petroleum text-light-natural py-5 w-100 h-100">
+                        <div class="about-img d-flex justify-content-center position-relative mb-3">
+                            <img class="img-fluid rounded-circle cv-img" style="width: 150px; height: 150px; object-fit: cover;" src="img/adler.png" alt="">
+                        </div>
+                        <div class="text-center">
+                            <a class="text-decoration-none" href="about-personel-3.html"><h2 class="display-5 mb-4 text-petroleum">Alfred Adleer</h2></a>
+                            <p class="lead fw-normal text-petroleum opacity-50">Psikiyatrist</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+    <!-- cta -->
+    <section class="cta bg-dark opacity-50">
+        <div class="cta-content">
+            <div class="container px-5">
+                <h2 class="text-light-natural display-4 display-md-3 display-lg-2 mb-4">Hayatınıza Değer Katın</h2>
+                <h3 class="text-light-natural display-5 display-md-4 display-lg-3 mb-4">Şimdi başlayın, kendiniz için <br> bir adım atın.</h3>
+                <button id="support" class="btn-light-natural shadow-md py-3 px-4 rounded-pill" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">
+                    Ücretsiz Ön Görüşme
+                </button>
+            </div>
+        </div>
+    </section>
+       <!-- testimonial aside -->
+    <aside class="text-center h-75 bg-gradient-primary-to-secondary">
+        <div class="container w-75 px-5 py-5">
+            <div class="row gx-5 justify-content-center">
+                <div class="col-xl-8">
+                    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <h3 class="text-light">Benimle Paylaşanlar</h3>
+                            <img class="w-25 h-25 " src="img/logo.png" alt="">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="5000">
+                                <div class="testimonial-content">
+                                    <h4 class="text-white mb-4">"Bu uygulama sayesinde çok daha iyi hissediyorum. İşaret Diliyle destek almak hiç bu kadar kolay olmamıştı!"</h4>
+                                    <p class="text-white-50">- Ayşe K., 28 yaşında</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="5000">
+                                <div class="testimonial-content">
+                                    <h4 class="text-white mb-4">"Güvenli ve anonim bir şekilde duygularımı paylaşabiliyorum. Gerçekten harika bir deneyim."</h4>
+                                    <p class="text-white-50">- Mehmet S., 35 yaşında</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="5000">
+                                <div class="testimonial-content">
+                                    <h4 class="text-white mb-4">"Uzman psikologlarla görüşmek artık çok kolay. Randevu almak ve seans yapmak sorunsuz."</h4>
+                                    <p class="text-white-50">- Fatma A., 42 yaşında</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Testimonial 1"></button>
+                            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1" aria-label="Testimonial 2"></button>
+                            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2" aria-label="Testimonial 3"></button>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                            <span class="visually-hidden">Önceki</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                            <span class="visually-hidden">Sonraki</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+
+     <!-- footer -->
+    <main class="bg-dark py-4 pt-5">
+        <div class="container mx-auto my-auto footer-container">
+            <div class="row d-flex">
+                <div class="col-6 col-lg-3 d-flex flex-column justify-content-center mb-4">
+                    <div class="container w-100">
+                        <h3 class="text-light-natural">Bize Katıl</h3>
+                        <input class="form-control mb-2 w-75" type="mail" placeholder="@benimlepaylas.com">
+                        <input class="btn btn-light-natural text-patroleum w-75" type="submit" value="Abone Ol">
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 d-flex flex-column justify-content-center mb-4">
+                    <ul class="list-unstyled">
+                            <li><a class="text-light-natural text-decoration-none" href="#">Yardım &amp; Destek</a></li>
+                            <li><a class="text-light-natural text-decoration-none" href="sss.html">SSS</a></li>
+                            <li><a class="text-light-natural text-decoration-none" href="#">Gizlilik</a></li>
+                            <li><a class="text-light-natural text-decoration-none" href="#">Hakkımızda</a></li>
+                        </ul>
+                </div>
+                <div class="col-6 col-lg-3 d-flex flex-column justify-content-center mb-4">
+                    <div class="container">
+                        <h3 class="text-light-natural">İletişim</h3>
+                        <p class="text-light-natural">Kardeşler Mahallesi, <br>
+                            Temmuz Caddesi, <br>
+                            No: 2 1993 Sivas
+                        </p>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 link-icon d-flex flex-column justify-content-start mb-4">
+                    <div class="container">
+                        <h3 class="text-light-natural">Bizi Takip Et</h3>
+                        <div class="d-flex gap-4 links"> 
+                            <a href="#"><i class="fa-brands fa-youtube text-danger"></i></a>
+                            <a href="#"><i class="fa-brands fa-x text-light-natural"></i></a>
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram text-danger"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- main footer -->
+    <footer class="bg-dark py-5 text-center">
+        <div class="container px-5">
+            <div class="small">
+                <div class="text-light-natural opacity-50 mb-2">Copyright © Benimle Paylaş 2025. All Rights Reserved.</div>
+                <a class="text-light-natural text-decoration-none opacity-50" href="#">Privacy</a>
+                <span class="mx-1">.</span>
+                <a class="text-light-natural text-decoration-none opacity-50" href="#">Terms</a>
+                <span class="mx-1">.</span>
+                <a class="text-light-natural text-decoration-none opacity-50" href="#">FAQ</a>
+            </div>
+        </div>
+    </footer>
+
+    <!--Fast Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header bg-petroleum">
+                <h1 class="text-light-natural fs-5" id="exampleModalLabel">Hızlı Destek Al</h1>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="floatingInput" placeholder="Full name">
+                        <label for="floatingInput">Ad</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="floatingInput" placeholder="Full name">
+                        <label for="floatingInput">Soyad</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">Email</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                        <label for="floatingTextarea2">Mesaj</label>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <button type="button" class="bg-modal text-light-natural d-block rounded-pill">Gönder</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Login modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header bg-petroleum">
+            <h5 class="text-light-natural" id="loginModalLabel">Üye Ol</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Kapat"></button>
+          </div>
+          <div class="modal-body bg-light">
+            <form class="login-content text-petroleum py-4" action="/action_page.php">
+                <div class="container">
+                    <p>Hesap oluşturmak için lütfen bu formu doldurun.</p>
+                    <hr>
+                    <label for="firstName">Ad</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="İsminiz">
+
+                    <label for="lastName">Soyad</label>
+                    <input type="text" class="form-control" id="lastName" placeholder="Soyadınız">
+
+                    <label for="psw">Şifre</label>
+                    <input type="password" class="form-control" id="password" placeholder="Şifrenizi Girin" name="psw" required>
+
+                    <label for="psw-repeat">Şifreyi Tekrarla</label>
+                    <input type="password" class="form-control" placeholder="Şifrenizi Tekrar Girin" id="repeatPassword" name="psw-repeat" required>
+                    
+                    <label for="password">Mail Adresiniz</label>
+                    <input type="password" class="form-control" placeholder="E-posta Adresinizi Girin" id="password" name="psw" required>
+                    
+                    <label class="mt-2" >
+                    <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px">Beni hatırla
+                    </label>
+
+                    <p>Hesap oluşturarak, 
+                        <a href="#" style="color:dodgerblue">Şartlar ve Gizlilik Politikamızı</a> kabul etmiş olursunuz.
+                    </p>
+
+                    <div class="clearfix">
+                        <button type="submit" class="btn btn-primary">Giriş</button>
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Vazgeç</button>
+                    </div>
+                </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Danışan Modal -->
+    <div class="modal fade" id="danisanModal" tabindex="-1" aria-labelledby="danisanModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header bg-petroleum text-light-natural">
+            <h5 class="modal-title text-light-natural" id="danisanModalLabel">Danışan Girişi</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Kapat"></button>
+        </div>
+        <div class="modal-body">
+            <form>
+            <div class="mb-3">
+                <label for="clientName" class="form-label text-petroleum">E-posta</label>
+                <input type="email" class="form-control" id="clientName" placeholder="danısan@benimlepaylas.com">
+            </div>
+            <div class="mb-3">
+                <label for="danisanPassword" class="form-label text-petroleum">Şifre</label>
+                <input type="password" class="form-control" id="danisanPassword" placeholder="Şifreniz">
+            </div>
+            <button type="submit" class="btn btn-petroleum text-light-natural w-100">Giriş Yap</button>
+            </form>
+            <div class="text-center mt-3">
+            <a class="text-petroleum" href="#">Şifremi unuttum</a>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Psikolog Modal -->
+    <div class="modal fade" id="psikologModal" tabindex="-1" aria-labelledby="psikologModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header bg-petroleum text-light-natural">
+            <h5 class="modal-title" id="psikologModalLabel">Psikolog Girişi</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Kapat"></button>
+        </div>
+        <div class="modal-body">
+            <form>
+            <div class="mb-3">
+                <label for="psikologEmail" class="form-label text-petroleum">E-posta</label>
+                <input type="email" class="form-control" id="psikologEmail" placeholder="psikolog@benimlepaylas.com">
+            </div>
+            <div class="mb-3">
+                <label for="psikologPassword" class="form-label text-petroleum">Şifre</label>
+                <input type="password" class="form-control" id="psikologPassword" placeholder="Şifreniz">
+            </div>
+            <button type="submit" class="btn btn-petroleum text-light-natural w-100">Giriş Yap</button>
+            </form>
+            <div class="text-center mt-3">
+            <a class="text-petroleum" href="#">Şifremi unuttum</a>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+<script src="main.js" ></script>
+
+</body>
+</html>
