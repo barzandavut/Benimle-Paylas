@@ -21,7 +21,6 @@ Bu proje, çevrim içi psikolojik danışmanlık hizmeti sunan bir web uygulamas
 - 👨‍⚕️ Psikolog ve danışan giriş bölümleri
 
 ## 📸 Ekran Görüntüsü
-<img src = "">
 
 ![Ana Sayfa](img/view/MSI%20Dizüstü%20Bilgisayarda%20Ekran%20Görüntüsü%20Almanın%204%20Kolay%20Yolu%20-%20Google%20Chrome%2022.07.2025%2016_36_04.png)
 
@@ -31,7 +30,7 @@ Projeyi kendi bilgisayarında çalıştırmak için:
 
 1. Bu repoyu klonlayın:
    ```bash
-   git clone https://github.com/kullanici-adi/proje-adi.git
+   [git clone https://github.com/kullanici-adi/proje-adi.git](https://github.com/barzandavut/Benimle-Paylas)
    ```
 
 2. Tarayıcıda açmak için:
